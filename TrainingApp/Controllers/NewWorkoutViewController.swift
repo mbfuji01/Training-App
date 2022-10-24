@@ -70,7 +70,7 @@ class NewWorkoutViewController: UIViewController {
     private lazy var saveButton: UIButton = {
         let button = UIButton(type: .system)
         button.backgroundColor = .specialGreen
-        button.setTitle("save", for: .normal)
+        button.setTitle("SAVE", for: .normal)
         button.tintColor = .white
         button.titleLabel?.font = .robotoBold16()
         button.layer.cornerRadius = 10
