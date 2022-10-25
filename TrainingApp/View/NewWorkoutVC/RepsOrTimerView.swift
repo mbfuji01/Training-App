@@ -88,7 +88,7 @@ class RepsOrTimerView: UIView {
     
     private let timerValueLabel: UILabel = {
         let label = UILabel()
-        label.text = "0"
+        label.text = "0 min"
         label.font = .robotoMedium22()
         label.textColor = .specialGray
         label.alpha = 0.5

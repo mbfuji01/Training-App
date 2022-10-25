@@ -60,6 +60,11 @@ class CalendarCollectionViewCell: UICollectionViewCell {
         addSubview(numberOfDayLabel)
     }
     
+    func cellConfigure(weekAray: [[String]], indexPath: IndexPath) {
+        numberOfDayLabel.text = weekAray[1][indexPath.item]
+        dayOfWeekLabel.text = weekAray[0][indexPath.item]
+    }
+    
     private func setConstraints() {
         NSLayoutConstraint.activate([
             dayOfWeekLabel.centerXAnchor.constraint(equalTo: centerXAnchor, constant: 0),
