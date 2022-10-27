@@ -58,6 +58,7 @@ class DetailsView: UIView {
         let button = UIButton(type: .system)
         button.setTitle("Editing", for: .normal)
         button.titleLabel?.font = .robotoMedium18()
+        button.tintColor = #colorLiteral(red: 0.7254901961, green: 0.7058823529, blue: 0.6392156863, alpha: 1)
         button.setImage(UIImage(named: "editingIcon"), for: .normal)
         button.addTarget(self, action: #selector(editingButtonTapped), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
@@ -66,9 +67,11 @@ class DetailsView: UIView {
     
     private lazy var nextSetButton: UIButton = {
         let button = UIButton(type: .system)
-        button.setTitle("Editing", for: .normal)
+        button.setTitle("NEXT SET", for: .normal)
         button.titleLabel?.font = .robotoMedium16()
         button.layer.cornerRadius = 10
+        button.tintColor = .specialGray
+        button.backgroundColor = #colorLiteral(red: 0.9215686275, green: 0.7058823529, blue: 0.02352941176, alpha: 1)
         button.addTarget(self, action: #selector(nextSetButtonTapped), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
@@ -94,6 +97,7 @@ class DetailsView: UIView {
         
         backgroundColor = .specialBrown
         layer.cornerRadius = 10
+        translatesAutoresizingMaskIntoConstraints = false
         
         addSubview(bicepsLabel)
         
@@ -149,7 +153,8 @@ extension DetailsView {
             nextSetButton.topAnchor.constraint(equalTo: editingButton.bottomAnchor, constant: 10),
             nextSetButton.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 15),
             nextSetButton.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -15),
-            nextSetButton.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -15)
+            nextSetButton.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -15),
+            nextSetButton.heightAnchor.constraint(equalToConstant: 45)
         ])
     }
 }
