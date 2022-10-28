@@ -58,8 +58,8 @@ class DetailsView: UIView {
         let button = UIButton(type: .system)
         button.setTitle("Editing", for: .normal)
         button.titleLabel?.font = .robotoMedium18()
-        button.tintColor = #colorLiteral(red: 0.7254901961, green: 0.7058823529, blue: 0.6392156863, alpha: 1)
         button.setImage(UIImage(named: "editingIcon"), for: .normal)
+        button.tintColor = #colorLiteral(red: 0.7254901961, green: 0.7058823529, blue: 0.6392156863, alpha: 1)
         button.addTarget(self, action: #selector(editingButtonTapped), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
@@ -118,11 +118,11 @@ class DetailsView: UIView {
     }
     
     @objc private func editingButtonTapped() {
-        
+        print("editingButtonTapped")
     }
     
     @objc private func nextSetButtonTapped() {
-        
+        print("nextSetButtonTapped")
     }
 }
 
