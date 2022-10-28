@@ -98,7 +98,7 @@ extension StartWorkoutViewController {
         ])
         NSLayoutConstraint.activate([
             closeButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20),
-            closeButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -15)
+            closeButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20)
         ])
         NSLayoutConstraint.activate([
             sportsmanImageView.topAnchor.constraint(equalTo: startWorkoutLabel.bottomAnchor, constant: 20),
@@ -108,18 +108,18 @@ extension StartWorkoutViewController {
         ])
         NSLayoutConstraint.activate([
             detailsLabel.topAnchor.constraint(equalTo: sportsmanImageView.bottomAnchor, constant: 5),
-            detailsLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20)
+            detailsLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 25)
         ])
         NSLayoutConstraint.activate([
             detailsView.topAnchor.constraint(equalTo: detailsLabel.bottomAnchor, constant: 0),
-            detailsView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 15),
-            detailsView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -15),
+            detailsView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+            detailsView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
             detailsView.heightAnchor.constraint(equalToConstant: 240)
         ])
         NSLayoutConstraint.activate([
             finishButton.topAnchor.constraint(equalTo: detailsView.bottomAnchor, constant: 15),
-            finishButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 15),
-            finishButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -15),
+            finishButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+            finishButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
             finishButton.heightAnchor.constraint(equalToConstant: 50)
         ])
     }
