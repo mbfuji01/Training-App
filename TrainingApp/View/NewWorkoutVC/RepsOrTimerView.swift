@@ -18,7 +18,7 @@ class RepsOrTimerView: UIView {
         return label
     }()
     
-    private let setsValueLabel: UILabel = {
+    let setsValueLabel: UILabel = {
         let label = UILabel()
         label.text = "1"
         label.font = .robotoMedium22()
@@ -27,7 +27,7 @@ class RepsOrTimerView: UIView {
         return label
     }()
     
-    private lazy var setsSlider: UISlider = {
+    lazy var setsSlider: UISlider = {
         let slider = UISlider()
         slider.minimumValue = 1
         slider.maximumValue = 50
@@ -56,7 +56,7 @@ class RepsOrTimerView: UIView {
         return label
     }()
     
-    private let repsValueLabel: UILabel = {
+    let repsValueLabel: UILabel = {
         let label = UILabel()
         label.text = "1"
         label.font = .robotoMedium22()
@@ -65,7 +65,7 @@ class RepsOrTimerView: UIView {
         return label
     }()
     
-    private lazy var repsSlider: UISlider = {
+    lazy var repsSlider: UISlider = {
         let slider = UISlider()
         slider.minimumValue = 1
         slider.maximumValue = 50
@@ -86,7 +86,7 @@ class RepsOrTimerView: UIView {
         return label
     }()
     
-    private let timerValueLabel: UILabel = {
+    let timerValueLabel: UILabel = {
         let label = UILabel()
         label.text = "0 min"
         label.font = .robotoMedium22()
@@ -96,7 +96,7 @@ class RepsOrTimerView: UIView {
         return label
     }()
     
-    private lazy var timerSlider: UISlider = {
+    lazy var timerSlider: UISlider = {
         let slider = UISlider()
         slider.minimumValue = 1
         slider.maximumValue = 600
@@ -168,8 +168,7 @@ class RepsOrTimerView: UIView {
     @objc private func timerSliderChanged() {
         
         let (min, sec) = { (secs: Int) -> (Int, Int) in
-            return (secs / 60, secs % 60)
-        }(Int(timerSlider.value))
+            return (secs / 60, secs % 60) }(Int(timerSlider.value))
   
         timerValueLabel.text = (sec != 0 ? "\(min) min \(sec) sec" : "\(min) min")
         

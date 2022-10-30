@@ -27,6 +27,9 @@
 		18C2A27328FF236C00BCB133 /* roboto-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18C2A27228FF236C00BCB133 /* roboto-bold.ttf */; };
 		18C2A27528FF237400BCB133 /* roboto-medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18C2A27428FF236E00BCB133 /* roboto-medium.ttf */; };
 		18C2A27828FF2DE900BCB133 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C2A27728FF2DE900BCB133 /* CalendarView.swift */; };
+		18F37723290D589F00FED32B /* WorkoutModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F37722290D589F00FED32B /* WorkoutModel.swift */; };
+		18F37726290D690F00FED32B /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F37725290D690F00FED32B /* RealmManager.swift */; };
+		18F3772B290D6F8800FED32B /* SimpleAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F3772A290D6F8800FED32B /* SimpleAlert.swift */; };
 		18FAA07D2905D63F0096259E /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FAA07C2905D63F0096259E /* MainTabBarController.swift */; };
 		18FAA07F2905D7A10096259E /* StatisticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FAA07E2905D7A10096259E /* StatisticViewController.swift */; };
 		18FAA0812905D7B00096259E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FAA0802905D7B00096259E /* ProfileViewController.swift */; };
@@ -58,6 +61,9 @@
 		18C2A27228FF236C00BCB133 /* roboto-bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "roboto-bold.ttf"; sourceTree = "<group>"; };
 		18C2A27428FF236E00BCB133 /* roboto-medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "roboto-medium.ttf"; sourceTree = "<group>"; };
 		18C2A27728FF2DE900BCB133 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		18F37722290D589F00FED32B /* WorkoutModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutModel.swift; sourceTree = "<group>"; };
+		18F37725290D690F00FED32B /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		18F3772A290D6F8800FED32B /* SimpleAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleAlert.swift; sourceTree = "<group>"; };
 		18FAA07C2905D63F0096259E /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		18FAA07E2905D7A10096259E /* StatisticViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticViewController.swift; sourceTree = "<group>"; };
 		18FAA0802905D7B00096259E /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +106,7 @@
 				186734A928FEF25F005D59F0 /* Models */,
 				186734AB28FEF276005D59F0 /* View */,
 				186734AA28FEF269005D59F0 /* Controllers */,
+				18F37724290D68F600FED32B /* Services */,
 				186734AC28FEF28D005D59F0 /* Extensions */,
 				186734AE28FEF2B9005D59F0 /* Resources */,
 			);
@@ -118,6 +125,7 @@
 		186734A928FEF25F005D59F0 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				18F37722290D589F00FED32B /* WorkoutModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -141,6 +149,7 @@
 				18C2A27628FF2DCE00BCB133 /* MainVC */,
 				1892F18028FFFF2C0078CD30 /* NewWorkoutVC */,
 				18688C9F2909C76400BC0B5A /* StartWorkoutVC */,
+				18F37729290D6F6A00FED32B /* Alerts */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -219,6 +228,22 @@
 				1892F17B28FF38850078CD30 /* Cells */,
 			);
 			path = MainVC;
+			sourceTree = "<group>";
+		};
+		18F37724290D68F600FED32B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				18F37725290D690F00FED32B /* RealmManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		18F37729290D6F6A00FED32B /* Alerts */ = {
+			isa = PBXGroup;
+			children = (
+				18F3772A290D6F8800FED32B /* SimpleAlert.swift */,
+			);
+			path = Alerts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,10 +335,13 @@
 				18FAA0812905D7B00096259E /* ProfileViewController.swift in Sources */,
 				1885147D29031A56003AEDE1 /* DateAndRepatView.swift in Sources */,
 				186734BB28FF0E19005D59F0 /* UIColor + Extensions.swift in Sources */,
+				18F37723290D589F00FED32B /* WorkoutModel.swift in Sources */,
 				182E029A290910E20060CFE7 /* StartWorkoutViewController.swift in Sources */,
 				18ACB5DE2904683300F2B33A /* RepsOrTimerView.swift in Sources */,
+				18F37726290D690F00FED32B /* RealmManager.swift in Sources */,
 				1892F17F28FFFE960078CD30 /* NewWorkoutViewController.swift in Sources */,
 				18688CA12909C78E00BC0B5A /* DetailsView.swift in Sources */,
+				18F3772B290D6F8800FED32B /* SimpleAlert.swift in Sources */,
 				1892F17A28FF38760078CD30 /* CalendarCollectionViewCell.swift in Sources */,
 				1892F182290165750078CD30 /* WorkoutTableViewCell.swift in Sources */,
 				18FAA0832905DCD00096259E /* UILabel + Extensions.swift in Sources */,
