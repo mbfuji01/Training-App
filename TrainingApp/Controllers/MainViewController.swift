@@ -73,7 +73,7 @@ class MainViewController: UIViewController {
     
     private let tableView: UITableView = {
         let tableView = UITableView()
-        tableView.backgroundColor = .specialBackground
+        tableView.backgroundColor = .clear
         tableView.separatorStyle = .none
         tableView.showsVerticalScrollIndicator = false
         tableView.bounces = false
@@ -141,7 +141,6 @@ class MainViewController: UIViewController {
         let calendar = Calendar.current
         let components = calendar.dateComponents([.weekday], from: date)
         guard let weekday = components.weekday else { return }
-        print(weekday)
         
         let dateStart = date
         let dateEnd: Date = {
