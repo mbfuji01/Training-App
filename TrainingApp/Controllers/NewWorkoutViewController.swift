@@ -82,6 +82,7 @@ class NewWorkoutViewController: UIViewController {
     
     let dateAndRepeatView = DateAndRepeatView()
     let repsOrTimerView = RepsOrTimerView()
+    let chooseImageView = ChooseImageView()
     
     private let localRealm = try! Realm()
     private var workoutModel = WorkoutModel()
@@ -113,6 +114,7 @@ class NewWorkoutViewController: UIViewController {
         view.addSubview(repsOrTimerLabel)
         view.addSubview(repsOrTimerView)
         view.addSubview(saveButton)
+        view.addSubview(chooseImageView)
     }
     
     private func setDelegates() {
@@ -151,7 +153,6 @@ class NewWorkoutViewController: UIViewController {
         workoutModel.workoutNumberOfDay = weekday
         
         workoutModel.workoutRepeat = (dateAndRepeatView.repeatSwitch.isOn)
-        
         workoutModel.workoutSets = Int(repsOrTimerView.setsSlider.value)
         workoutModel.workoutReps = Int(repsOrTimerView.repsSlider.value)
         workoutModel.workoutSets = Int(repsOrTimerView.timerSlider.value)
@@ -206,7 +207,7 @@ extension NewWorkoutViewController {
     
     private func setConstraints() {
         NSLayoutConstraint.activate([
-            newWorkoutLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 30),
+            newWorkoutLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 15),
             newWorkoutLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 0)
         ])
         NSLayoutConstraint.activate([
@@ -246,7 +247,13 @@ extension NewWorkoutViewController {
             repsOrTimerView.heightAnchor.constraint(equalToConstant: 275)
         ])
         NSLayoutConstraint.activate([
-            saveButton.topAnchor.constraint(equalTo: repsOrTimerView.bottomAnchor, constant: 15),
+            chooseImageView.topAnchor.constraint(equalTo: repsOrTimerView.bottomAnchor, constant: 10),
+            chooseImageView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+            chooseImageView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
+            chooseImageView.heightAnchor.constraint(equalToConstant: 70)
+        ])
+        NSLayoutConstraint.activate([
+            saveButton.topAnchor.constraint(equalTo: chooseImageView.bottomAnchor, constant: 10),
             saveButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
             saveButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
             saveButton.heightAnchor.constraint(equalToConstant: 50)

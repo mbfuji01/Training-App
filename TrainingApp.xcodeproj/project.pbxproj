@@ -30,6 +30,8 @@
 		18F37723290D589F00FED32B /* WorkoutModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F37722290D589F00FED32B /* WorkoutModel.swift */; };
 		18F37726290D690F00FED32B /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F37725290D690F00FED32B /* RealmManager.swift */; };
 		18F3772B290D6F8800FED32B /* SimpleAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F3772A290D6F8800FED32B /* SimpleAlert.swift */; };
+		18F4CA1F290F07B000FD262A /* ChooseImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F4CA1E290F07B000FD262A /* ChooseImageView.swift */; };
+		18F4CA21290F0CEA00FD262A /* ChooseTrainingImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F4CA20290F0CEA00FD262A /* ChooseTrainingImageCell.swift */; };
 		18FAA07D2905D63F0096259E /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FAA07C2905D63F0096259E /* MainTabBarController.swift */; };
 		18FAA07F2905D7A10096259E /* StatisticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FAA07E2905D7A10096259E /* StatisticViewController.swift */; };
 		18FAA0812905D7B00096259E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FAA0802905D7B00096259E /* ProfileViewController.swift */; };
@@ -64,6 +66,8 @@
 		18F37722290D589F00FED32B /* WorkoutModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutModel.swift; sourceTree = "<group>"; };
 		18F37725290D690F00FED32B /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
 		18F3772A290D6F8800FED32B /* SimpleAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleAlert.swift; sourceTree = "<group>"; };
+		18F4CA1E290F07B000FD262A /* ChooseImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseImageView.swift; sourceTree = "<group>"; };
+		18F4CA20290F0CEA00FD262A /* ChooseTrainingImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseTrainingImageCell.swift; sourceTree = "<group>"; };
 		18FAA07C2905D63F0096259E /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		18FAA07E2905D7A10096259E /* StatisticViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticViewController.swift; sourceTree = "<group>"; };
 		18FAA0802905D7B00096259E /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -198,6 +202,7 @@
 			children = (
 				1892F17928FF38760078CD30 /* CalendarCollectionViewCell.swift */,
 				1892F181290165750078CD30 /* WorkoutTableViewCell.swift */,
+				18F4CA20290F0CEA00FD262A /* ChooseTrainingImageCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -207,6 +212,7 @@
 			children = (
 				1885147C29031A56003AEDE1 /* DateAndRepatView.swift */,
 				18ACB5DD2904683300F2B33A /* RepsOrTimerView.swift */,
+				18F4CA1E290F07B000FD262A /* ChooseImageView.swift */,
 			);
 			path = NewWorkoutVC;
 			sourceTree = "<group>";
@@ -337,7 +343,9 @@
 				186734BB28FF0E19005D59F0 /* UIColor + Extensions.swift in Sources */,
 				18F37723290D589F00FED32B /* WorkoutModel.swift in Sources */,
 				182E029A290910E20060CFE7 /* StartWorkoutViewController.swift in Sources */,
+				18F4CA21290F0CEA00FD262A /* ChooseTrainingImageCell.swift in Sources */,
 				18ACB5DE2904683300F2B33A /* RepsOrTimerView.swift in Sources */,
+				18F4CA1F290F07B000FD262A /* ChooseImageView.swift in Sources */,
 				18F37726290D690F00FED32B /* RealmManager.swift in Sources */,
 				1892F17F28FFFE960078CD30 /* NewWorkoutViewController.swift in Sources */,
 				18688CA12909C78E00BC0B5A /* DetailsView.swift in Sources */,
